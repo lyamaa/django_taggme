@@ -8,7 +8,8 @@ class Book(models.Model):
     title = models.CharField(max_length=255)
     description = models.CharField(max_length=1000)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    tag = TaggableManager()
+    tags= TaggableManager()
+    updated = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
