@@ -1,16 +1,20 @@
-{% extends 'base.html' %} {% block content %}
+
+{% extends 'base.html' %}
+    {% load cloudinary %} 
+ {% block content %}
 <h1 class="title">Tag-Me</h1>
 <p>Books tagged with <strong>{{ tag.name }}</strong></p>
 <div class="columns is-mobile mt-5">
   <div class="column is-half is-offset-one-quarter">
     {% for book in books %}
     <div class="card mt-3">
+    
       <div class="card-content">
         <div class="media">
           <div class="media-left">
-            <figure class="image is-48x48">
+            <figure class="image is-128x128">
               <img
-                src="https://bulma.io/images/placeholders/96x96.png"
+                src={{book.image.url}}
                 alt="Placeholder image"
               />
             </figure>

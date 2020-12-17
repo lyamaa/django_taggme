@@ -23,7 +23,7 @@ def home(request, pk=None):
 
 def create(request, *args, **kwargs):
     if request.method == 'POST':
-        form = BookForm(request.POST)
+        form = BookForm(request.POST, request.FILES)
         if form.is_valid():
             book = form.save(commit=False)
             book.author = request.user
