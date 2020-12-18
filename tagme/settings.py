@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '2mf(g_#r6ec$=uqvctsr@8v(hhqmmn)i%y!+k=1h2^zn+eqm$8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['taggerit.herokuapp.com']
 
 
 # Application definition
