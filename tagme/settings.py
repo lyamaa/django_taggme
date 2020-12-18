@@ -120,7 +120,7 @@ USE_TZ = True
 #     BASE_DIR / 'static',
 #     BASE_DIR / 'media',
 # ]
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 # MEDIA_URL = '/media/'
 
 # STATIC_ROOT = BASE_DIR / 'static_cdn'
