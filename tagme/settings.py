@@ -130,9 +130,9 @@ STATIC_ROOT = BASE_DIR / 'static_cdn'
 
 #add config 
 cloudinary.config(
-  cloud_name = 'dazyxzm1e',
-  api_key = '456582439825493',
-  api_secret = 'jeWgOiCxVL8Kmbu0pAyTM4YpcLE',
+  cloud_name = '',
+  api_key = '',
+  api_secret = '',
   secure = True
 )
 
